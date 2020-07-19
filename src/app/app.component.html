@@ -1,0 +1,9 @@
+<h2>To do App</h2>
+<div class="container">
+  <div class="container-search">
+    <input type="text" id="search" placeholder="Enter item here.." [(ngModel)]="itemName">
+    <button class="btn-add" (click)="addItem()">Add</button>
+  </div>
+  <app-to-do-item *ngFor="let item of items; let i = index" [item]="item" (itemForDelete)="deleteItem($event)">
+  </app-to-do-item>
+</div>

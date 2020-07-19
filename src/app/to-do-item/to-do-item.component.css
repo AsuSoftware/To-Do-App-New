@@ -1,0 +1,41 @@
+.contenitor {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.contenitor p {
+  margin: 0 50px;
+}
+
+.check-box {
+  -webkit-appearance: none;
+  border-radius: 20px;
+  background: green;
+	border: 1px solid #cacece;
+	padding: 9px;
+  display: inline-block;
+  position: relative;
+  padding: 14px;
+}
+
+.check-box:checked {
+	background-color: green;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #fff;
+}
+
+.check-box:active, .check-box:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.check-box:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: #fff;
+}

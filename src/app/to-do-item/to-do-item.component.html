@@ -1,0 +1,5 @@
+<div class="contenitor">
+  <input class="check-box" type="checkbox" [checked]="item.active" (change)="item.active = !item.active">
+  <p>{{item.name}}</p>
+  <button class="delete-btn" (click)="deleteItem()">Delete</button>
+</div>
